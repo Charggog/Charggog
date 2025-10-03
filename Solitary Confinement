@@ -1,0 +1,34 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Charggog | SC",
+	Text = "Loading...",
+	Icon = "rbxassetid://131920395739355",
+	Duration = 5
+})
+
+lp = game.Players.LocalPlayer
+lph = workspace[lp.Name].Head
+if lph then
+	lph.SymbolGUI.Enabled = true
+end
+
+
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Charggog | SC",
+	Text = "Success! Symbol showed!",
+	Icon = "rbxassetid://131920395739355",
+	Duration = 5
+})
+
+if _G.y ~= true then
+
+jack = game:GetService("ReplicatedStorage").JackName.Value
+setclipboard(jack)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Charggog | SC",
+	Text = "The Jack of Heart is: ".. jack,
+	Icon = "rbxassetid://131920395739355",
+	Duration = 5
+})
+_G.y = true
+end
